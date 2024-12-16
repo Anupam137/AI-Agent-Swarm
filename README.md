@@ -9,19 +9,17 @@ company_data_agency/
 ├── core/                      # Core agent and agency classes
 │   ├── custom_agent.py       # Base agent class
 │   └── custom_agency.py      # Agency orchestration
-├── config/                   # Configuration files
-│   ├── .env                  # Environment variables
-│   └── agency_manifesto.md   # Agency instructions
+├── .env                  # Environment variables
+│ agency_manifesto.md   # Agency instructions
 ├── utils/                    # Utility functions
 │   ├── database.py          # Database operations
 │   ├── web_search.py        # Web search operations
 │   └── data_presentation.py # Data formatting
-├── tests/                    # Test files
-│   └── test_db.py           # Database connection test
-├── agents/                   # Individual agents
-│   ├── web_search_agent/    # Web search agent
-│   ├── database_agent/      # Database agent
-│   └── data_presenter_agent/# Data presenter agent
+├── test_db.py                    # Test files Database connection test
+# Individual agents
+├── web_search_agent/    # Web search agent
+├── database_agent/      # Database agent
+└── data_presenter_agent/# Data presenter agent
 ├── setup.py                 # Package setup
 └── requirements.txt         # Dependencies
 ```
@@ -33,7 +31,7 @@ company_data_agency/
    ```bash
    pip install -r requirements.txt
    ```
-3. Set up environment variables in `config/.env`:
+3. Set up environment variables in `.env`:
    ```
    MYSQL_HOST=your_host
    MYSQL_USER=your_user
@@ -54,12 +52,10 @@ Enter a company name when prompted, and the agency will:
 2. Search in the database
 3. Present combined results in a table format
 
-## Development
+## Development Plans
 
-- Core functionality is in the `core` directory
-- Add new utility functions in the `utils` directory
-- Configuration files are in the `config` directory
-- Tests are in the `tests` directory
+- Adding an LLM that can present a relevance score based on source of information.
+- Making modifications to db for cases where the company name doesnt exist. 
 
 ## Requirements
 
