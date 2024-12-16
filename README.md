@@ -6,11 +6,11 @@ A multi-agent system for retrieving and presenting company information from mult
 
 ```
 company_data_agency/
-├── core/                      # Core agent and agency classes
-│   ├── custom_agent.py       # Base agent class
-│   └── custom_agency.py      # Agency orchestration
+# Core agent and agency classes
+├── custom_agent.py       # Base agent class
+├──custom_agency.py      # Agency orchestration
 ├── .env                  # Environment variables
-│ agency_manifesto.md   # Agency instructions
+├──agency_manifesto.md   # Agency instructions
 ├── utils/                    # Utility functions
 │   ├── database.py          # Database operations
 │   ├── web_search.py        # Web search operations
@@ -19,7 +19,7 @@ company_data_agency/
 # Individual agents
 ├── web_search_agent/    # Web search agent
 ├── database_agent/      # Database agent
-└── data_presenter_agent/# Data presenter agent
+├── data_presenter_agent/# Data presenter agent
 ├── setup.py                 # Package setup
 └── requirements.txt         # Dependencies
 ```
