@@ -16,7 +16,7 @@ class WebSearchAgent(CustomAgent):
     async def process_message(self, message: str, conversation_history: List[Dict[str, str]] = None) -> str:
         """Process a message and update tool with the company name before processing."""
         # Extract company name from the message
-        # This is a simple implementation - you might want to make it more sophisticated
+        
         company_name = message.strip()
         
         # Create a new tool instance with the current company name
