@@ -55,7 +55,8 @@ Enter a company name when prompted, and the agency will:
 ## Development Plans
 
 - Adding an LLM that can present a relevance score based on source of information.
-- Making modifications to db for cases where the company name doesnt exist. 
+- Making modifications to db for cases where the company name doesnt exist.
+- Implementing solutions using llama or other open source models(currently llama3.1 often throws errors while using certain tools)
 
 ## Requirements
 
